@@ -1,0 +1,15 @@
+[package]
+name = "rs_logger"
+version = "0.1.0"
+edition = "2024"
+description = "rust simple logger"
+repository = "https://github.com/virusdefender/rs_logger"
+license = "MIT"
+
+[dependencies]
+log = { version = "0.4.27", features = ["std"] }
+utc-dt = "0.3.1"
+
+[features]
+log_level_color = []
+default = ["log_level_color"]
