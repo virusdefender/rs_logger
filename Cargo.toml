@@ -1,8 +1,8 @@
 [package]
 name = "rs_logger"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
-description = "rust simple logger"
+description = "A minimal implementation of a Rust logger"
 repository = "https://github.com/virusdefender/rs_logger"
 license = "MIT"
 

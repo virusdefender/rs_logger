@@ -88,10 +88,9 @@ where
         // [time level module] [extra] - message
         // append 信息之后，需要添加一个额外的空格
         if A::append(&mut stream) {
-            let _ = writeln!(stream, " - {}", record.args());
-        } else {
-            let _ = writeln!(stream, "- {}", record.args());
+            let _ = write!(stream, " ");
         }
+        let _ = writeln!(stream, "- {}", record.args());
         let _ = stream.flush();
     }
 
@@ -115,7 +114,7 @@ fn test_log_appender() {
     impl LogAppender for PIDLogAppender {
         fn append<W: Write>(stream: &mut W) -> bool {
             let pid = std::process::id();
-            let _ = write!(stream, "[PID: {}] ", pid);
+            let _ = write!(stream, "[PID: {}]", pid);
             true
         }
     }
