@@ -28,7 +28,7 @@ dependencies = [
 
 [[package]]
 name = "rs_logger"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "log",
  "utc-dt",

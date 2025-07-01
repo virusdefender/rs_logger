@@ -2,7 +2,9 @@
 
 A minimal implementation of a Rust logger.
 
-## 特性说明
+https://crates.io/crates/rs_logger
+
+## Features
 
 - Logs are printed to stderr
 - Supports logging without initializing the logging framework (using log_print!)
